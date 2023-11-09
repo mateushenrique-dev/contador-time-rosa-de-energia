@@ -1,0 +1,45 @@
+.counterWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #01080E;
+  color: #D7F9FF;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-weight: 700;
+    font-family: var(--chakra);
+    line-height: 1.17;
+    margin-bottom: 0;
+    font-size: 2.625rem;
+    text-align: center;
+
+    .highlightPink {
+      color: #dc6ebe;
+    }
+
+    .highlightYellow {
+      color: #ffba05;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 80%;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 70%;
+    }
+  }
+
+  strong {
+    font-family: var(--chakra);
+    font-size: 56px;
+  }
+}

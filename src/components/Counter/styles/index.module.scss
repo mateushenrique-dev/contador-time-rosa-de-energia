@@ -1,0 +1,35 @@
+.counterHandler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  margin-top: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  button {
+    font-family: var(--chakra);
+    color: #01080E;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .625rem 1.3125rem;
+    width: 150px;
+    border: none;
+    background: #2BFDBE;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 16px) 100%,0 100%);
+    transition: 0.3s;
+    text-transform: uppercase;
+    
+    &:hover {
+      cursor: pointer;
+      background: #D9FFF6;
+      transform: translateY(1px);
+    }
+  }
+}
