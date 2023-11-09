@@ -10,15 +10,11 @@ const chrakraPetch = Chakra_Petch({
 })
 
 export default async function Counter() {
-  const daysLeft = (await (await api.get('/')).data).daysPassed
-
-  console.log(daysLeft)
-
   return (
     <main className={`${styles.counterWrapper} ${chrakraPetch.variable}`}>
       <div className={styles.counter}>     
         <h1>Quanto tempo o <span className={styles.highlightPink}>time rosa</span> está com <span className={styles.highlightYellow}>energia</span> 💡</h1>
-        <CounterHandler daysLeft={daysLeft} />
+        <CounterHandler />
       </div>
     </main>
   )

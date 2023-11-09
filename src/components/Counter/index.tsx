@@ -3,9 +3,9 @@
 import useDaysLeft from '../../hooks/useDaysLeft';
 import styles from "./styles/index.module.scss";
 
-export default function CounterHandler({ daysLeft }: any) {
+export default function CounterHandler() {
 
-  const { daysPassed, resetCounter } = useDaysLeft(daysLeft);
+  const { daysPassed, resetCounter } = useDaysLeft();
 
   return (
     <div className={styles.counterHandler}>
